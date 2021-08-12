@@ -2,5 +2,6 @@
 OpenLane
 
 Contents
- DAY 1 - Introduction to SkyWater130 and basic DRC/LVS Design flow
+
+DAY 1 - Introduction to SkyWater130 and basic DRC/LVS Design flow
  
