@@ -3,6 +3,9 @@
 ## Contents
   1. Day 1 - Introduction to SkyWater130 PDK and basic DRC/LVS Design Flow
   2. Day 2 - Introduction to DRC and LVS
+  3. Day 3 - Introdtuction to DRC Rules
+  4. Day 4 - Understanding PNR and Physical Verification
+  5. Day 5 - 
 
 ## DAY 1 - Introduction to SkyWater130 PDK and basic DRC/LVS Design flow
 
