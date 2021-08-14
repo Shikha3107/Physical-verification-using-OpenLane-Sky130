@@ -1,3 +1,7 @@
+
+![Day1_lab_check_tool_installation_netgen](https://user-images.githubusercontent.com/24937940/129443619-5386663f-9269-401c-9d2f-448838e5fa12.PNG)
+![Day1_Lab_check_tool_installation_ngspice](https://user-images.githubusercontent.com/24937940/129443620-a2ca8378-5572-4171-a380-be398ccf05f5.PNG)
+![Day1_Lab_check_tool_installation_xschem](https://user-images.githubusercontent.com/24937940/129443621-89dbea04-72e3-42e5-b137-6482601d064d.PNG)
 # Physical-verification-using-OpenLane-Sky130
 
 ## Contents
@@ -29,20 +33,20 @@ The tools that can work with SkyWater PDK are Magic, Klayout, netgen, xschem, op
 Learnt about various open source tools like magic, netgen, xschem, ngspice
 
   #### magic
-       
-       ![Day1_Lab_check_tool_installation_magic](https://user-images.githubusercontent.com/24937940/129443463-d3157c6b-1c0e-407d-a935-080741c7c392.PNG)
+ 
+  ![Day1_Lab_check_tool_installation_magic](https://user-images.githubusercontent.com/24937940/129443616-bff833e7-b2a3-496b-af50-a2c1430a0267.PNG)
 
   #### netgen
   
-       ![Day1_lab_check_tool_installation_netgen](https://user-images.githubusercontent.com/24937940/129443330-d7235990-408a-4635-a322-a13d213d3414.PNG)
+  ![Day1_lab_check_tool_installation_netgen](https://user-images.githubusercontent.com/24937940/129443330-d7235990-408a-4635-a322-a13d213d3414.PNG)
 
   #### xschem
   
-       ![Day1_Lab_check_tool_installation_xschem](https://user-images.githubusercontent.com/24937940/129443365-5cffb405-688c-4d35-9bc6-081db8585b07.PNG)
+  ![Day1_Lab_check_tool_installation_xschem](https://user-images.githubusercontent.com/24937940/129443365-5cffb405-688c-4d35-9bc6-081db8585b07.PNG)
 
   #### ngspice
        
-     ![Day1_Lab_check_tool_installation_ngspice](https://user-images.githubusercontent.com/24937940/129443506-cd3088ed-298b-4871-be74-2215c7f19424.PNG)
+  ![Day1_Lab_check_tool_installation_ngspice](https://user-images.githubusercontent.com/24937940/129443506-cd3088ed-298b-4871-be74-2215c7f19424.PNG)
 
 
 
