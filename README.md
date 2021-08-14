@@ -121,7 +121,23 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
   
   ### Importing Schematic to layout and layout steps
   
+  Following are the steps to be followed for importing schematic to layout and completing inverter layout
+  1. Go to magic directory, cd ../mag
+  2. Run, magic -d XR
+  3. Go to File menu and Click on Import SPICE
   
+  ![image](https://user-images.githubusercontent.com/24937940/129460324-fb8d2f60-2280-4d3b-94f3-bdd6afda9bf1.png)
+  
+  Devices corresponding to Symbols from schematic will be dropped in layout window, align them
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129460827-babed2df-f807-4e58-9c2e-08ea8026bd87.png)
+
+  4. Apply some of the configurations for PFET and NFET devices
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129460880-7ced7a83-8aa8-4715-b8ec-bdef46c00c3a.png)
+  ![image](https://user-images.githubusercontent.com/24937940/129460912-bd739ce5-9f57-48e8-aa0f-697f8a4913e4.png)
+
+  5. Start connecting the devices and pins.
   
 ## DAY 2 - Introduction to DRC and LVS
 
