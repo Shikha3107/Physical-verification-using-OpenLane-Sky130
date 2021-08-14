@@ -77,19 +77,47 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
   
   Following are the steps to be followed for creating symbols for testbench simulation
   1. Make symbols from schematics
-  2. Open created schematic in .sym format
+  2. Open New Schematic, Insert inverter.sym here
   3. A simple inverter symbol will be created
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459737-2638d8c5-7d2c-4596-a14f-30bf2ff33465.png)
+
   4. Include voltage source, Gnd, connect through wires
-  5. Create two text based components by choosing from code shown
-  6. First one will be used to tell testbench that which device models will be included and which techfile and corner will be selected
-  7. Second one is to fill transient analysis for simulation
-  8. Save this as inverter_tb.spice
-  9. Run Simulation
-  10. Check the plot
-  11. With this we have functionally evaluated our testbench
-  12. Before moving to layout we need to have netlist that is not a testbench itself but it is a circuit.
-  13. Open inverter.sch and edit, Check the LVS netlist is top level .subckt
-  14. Click on simulation this will create inverter.spice
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459834-c0ff1cb6-0072-45a6-84b4-5acbb57caaa6.png)
+  
+  5. Fill voltage source configuration
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459864-50427c13-ade8-45f6-b21e-90bfef26b8a2.png)
+  
+  6. Create two text based components by choosing from code shown
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459901-93cbad5b-54d7-445a-bac9-f26496c51285.png)
+
+  7. First one will be used to tell testbench that which device models will be included and which techfile and corner will be selected
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459970-0bb75a72-21b9-42e7-94fb-810d49e860ae.png)
+
+  8. Second one is to fill transient analysis for simulation
+
+  ![image](https://user-images.githubusercontent.com/24937940/129459998-64116ab9-ac5e-4903-bb8a-60f0c929babd.png)
+
+  9. Save this as inverter_tb.spice
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129460013-547dca0e-2bdd-4390-8c76-7b955c3456de.png)
+
+  10. Run Simulation
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129460115-23294a40-657b-4464-8da0-a1f8fd9a2039.png)
+
+  11. Check the plot
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129460125-27e5eb98-334d-4061-83cd-cb5148ef721e.png)
+
+  12. With this we have functionally evaluated our testbench
+  13. Before moving to layout we need to have netlist that is not a testbench itself but a circuit.
+  14. Open inverter.sch and edit, Check the LVS netlist top level is a .subckt
+  15. Click on simulation this will create inverter.spice
   
   ### Importing Schematic to layout and layout steps
   
