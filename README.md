@@ -25,9 +25,31 @@ The tools that can work with SkyWater PDK are Magic, Klayout, netgen, xschem, op
   * #### Primitive devices and models
 
 ### OpenSource Tools and Flows
-  #### Schematic
-  #### Layout
 
+Learnt about various open source tools like magic, netgen, xschem, ngspice
+
+  #### magic
+       
+       ![Day1_Lab_check_tool_installation_magic](https://user-images.githubusercontent.com/24937940/129443303-e3c42f68-9ddb-4d7d-be71-18dec6932f68.PNG)
+
+       
+  #### netgen
+  
+       ![Day1_lab_check_tool_installation_netgen](https://user-images.githubusercontent.com/24937940/129443330-d7235990-408a-4635-a322-a13d213d3414.PNG)
+
+  
+  #### xschem
+  
+       ![Day1_Lab_check_tool_installation_xschem](https://user-images.githubusercontent.com/24937940/129443365-5cffb405-688c-4d35-9bc6-081db8585b07.PNG)
+
+       
+  #### ngspice
+       
+       ![image](https://user-images.githubusercontent.com/24937940/129443208-0095bc9d-76fa-45a7-9e1c-d5807fe242a3.png)
+
+       
+  
 ## DAY 2 - Introduction to DRC and LVS
+
 
  
