@@ -45,7 +45,9 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
        
   ![Day1_Lab_check_tool_installation_ngspice](https://user-images.githubusercontent.com/24937940/129443506-cd3088ed-298b-4871-be74-2215c7f19424.PNG)
 
-
+  #### Steps to be followed for creating setup
+  
+  ![creating_setup_design](https://user-images.githubusercontent.com/24937940/129444596-bc18c9b3-7537-487b-814d-2f6fe3c57e0d.PNG)
 
        
   
