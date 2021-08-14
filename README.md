@@ -49,7 +49,20 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
   
   ![creating_setup_design](https://user-images.githubusercontent.com/24937940/129444596-bc18c9b3-7537-487b-814d-2f6fe3c57e0d.PNG)
 
-       
+ ### Creating Schematic
+ 
+  Following are the steps to be followed for creating schematic using xschem,
+  1. Open xschem
+  2. From File choose -> New Schematic
+  3. Insert pfet and nfet devices from skywaterPDK and pins like input, output, vdd and vss from device libraries
+  4. Connect device and pins through wires using "w" key
+  5. Select devices and pins and update their properties by "q" key
+  6. Save the schematic.
+  
+  ### Creating testbench for simulation
+  
+  Following are the steps to be followed for creating symbols for testbench simulation
+  1. 
   
 ## DAY 2 - Introduction to DRC and LVS
 
