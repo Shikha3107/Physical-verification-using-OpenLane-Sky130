@@ -1,7 +1,4 @@
 
-![Day1_lab_check_tool_installation_netgen](https://user-images.githubusercontent.com/24937940/129443619-5386663f-9269-401c-9d2f-448838e5fa12.PNG)
-![Day1_Lab_check_tool_installation_ngspice](https://user-images.githubusercontent.com/24937940/129443620-a2ca8378-5572-4171-a380-be398ccf05f5.PNG)
-![Day1_Lab_check_tool_installation_xschem](https://user-images.githubusercontent.com/24937940/129443621-89dbea04-72e3-42e5-b137-6482601d064d.PNG)
 # Physical-verification-using-OpenLane-Sky130
 
 ## Contents
