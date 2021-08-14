@@ -60,8 +60,17 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
   1. Open xschem
   2. From File choose -> New Schematic
   3. Insert pfet and nfet devices from skywaterPDK and pins like input, output, vdd and vss from device libraries
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459345-42caab12-a089-42d1-b60d-8e4b5a86dcef.png)
+  
   4. Connect device and pins through wires using "w" key
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459504-6a55c6e6-d9e0-443b-ae85-204ce0e42bb1.png)
+  
   5. Select devices and pins and update their properties by "q" key
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129459561-ab64d713-2e0a-480c-b69e-6a7ece3b529d.png)
+  
   6. Save the schematic.
   
   ### Creating testbench for simulation
