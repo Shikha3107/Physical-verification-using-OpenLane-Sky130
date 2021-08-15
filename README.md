@@ -128,17 +128,49 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
   
   ![image](https://user-images.githubusercontent.com/24937940/129460324-fb8d2f60-2280-4d3b-94f3-bdd6afda9bf1.png)
   
-  Devices corresponding to Symbols from schematic will be dropped in layout window, align them
+  Devices present in circuit will be dropped on layout window.
   
   ![image](https://user-images.githubusercontent.com/24937940/129460827-babed2df-f807-4e58-9c2e-08ea8026bd87.png)
 
-  4. Apply some of the configurations for PFET and NFET devices
+  4. Apply some of the configurations for PFET and NFET devices.
   
   ![image](https://user-images.githubusercontent.com/24937940/129460880-7ced7a83-8aa8-4715-b8ec-bdef46c00c3a.png)
   ![image](https://user-images.githubusercontent.com/24937940/129460912-bd739ce5-9f57-48e8-aa0f-697f8a4913e4.png)
 
-  5. Start connecting the devices and pins.
+  5. Start connecting the devices and pins using metal1 layer.
   
+  ![image](https://user-images.githubusercontent.com/24937940/129480464-f4861d96-5ba5-45cc-a069-897175f4b425.png)
+  
+  6. Save the layout.
+  
+  ### DRC/LVS and Post Layout Simulation
+  
+  Following are the steps for running DRC/LVS and Post layout Simulation for inverter design
+  1. Run, extract do local and extract all for running extraction in magic own format
+  2. For obtaining in spice format, run ext2spice lvs and then ext2spice, ext2spice will create output spice netlist in ngspice format preferred for simulation.
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129478997-9fca832c-7c57-49dd-8f0e-2d5f2fdcf989.png)
+  
+  3. For removing any unparameterized cell, run following script,
+
+  ![image](https://user-images.githubusercontent.com/24937940/129479142-bea720f3-1339-459d-aebb-2ae144cce53e.png)
+  
+  4. For running LVS, Go to netgen dir, cd ../netgen
+  5. Run on terminal, netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129480957-00b7ca18-d58e-46f3-a11f-7528888d1600.png)
+  Circuit should match and give LVS match, but it was showing as mismatch.
+  
+  6. If LVS matches properly then continue with extraction to validate the your layout.
+  7. Run, extract do all, extract all, ext2spice lvs, ext2spice cthresh 0, ext2spice
+  8. Look into inverter.spice for parasitic capacitances extracted.
+  9. To run simulation, copy inverter_tb.spice from xschem directory into mag directory, align .subckt according to layout .subckt and include layout spice by .include inverter.spice
+  10. copy .spiceinit from xschem directory to run simulation
+  11. Run, ngspice inverter_tb.spice
+  
+  ![image](https://user-images.githubusercontent.com/24937940/129481629-741bbad0-cc43-45d3-9bd9-77327a0a2e1d.png)
+
+
 ## DAY 2 - Introduction to DRC and LVS
 
 
