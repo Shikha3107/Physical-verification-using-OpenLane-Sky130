@@ -157,12 +157,9 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
   
   4. For running LVS, Go to netgen dir, cd ../netgen
   5. Run on terminal, netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
-  
-  ![image](https://user-images.githubusercontent.com/24937940/129480957-00b7ca18-d58e-46f3-a11f-7528888d1600.png)
-  Circuit should match and give LVS match, but it was showing as mismatch.
-  
-  6. If LVS matches properly then continue with extraction to validate the your layout.
-  7. Run, extract do all, extract all, ext2spice lvs, ext2spice cthresh 0, ext2spice
+     Circuit should matches and give LVS match.
+  6. If LVS matches properly then continue with extraction
+  7. Run, extract do all, extract all, ext2spice lvs, ext2spice cthresh 0, ext2spice one by one on terminal
   8. Look into inverter.spice for parasitic capacitances extracted.
   9. To run simulation, copy inverter_tb.spice from xschem directory into mag directory, align .subckt according to layout .subckt and include layout spice by .include inverter.spice
   10. copy .spiceinit from xschem directory to run simulation
@@ -172,6 +169,100 @@ Learnt about various open source tools like magic, netgen, xschem, ngspice
 
 
 ## DAY 2 - Introduction to DRC and LVS
+
+Understanding GDS, extraction, DRC and LVS
+
+### DRC
+The main objective of DRC is to maintain if foundary rules for masking are meeting in the concerned layout.
+
+### Layout vs Schematic (LVS)
+The main objective of LVS run is to make sure if Layout matches the Schematic in electrical connectivity and devices.
+
+### Extraction
+
+![image](https://user-images.githubusercontent.com/24937940/129482115-c64a3dd4-e0ff-4f42-af5a-a15261d245cf.png)
+
+### Reading GDS
+
+Following are the steps performed,
+1. Know how many styles cif supports, by running magic -d XR and typing below commands,
+
+2. Run commands for gds read
+
+![image](https://user-images.githubusercontent.com/24937940/129482518-80d4e7b9-f489-4409-a6ce-7b3409543982.png)
+
+3. Then load cell from gds, by selecting Options-> Cell manager -> Choose cell -> Load
+
+![image](https://user-images.githubusercontent.com/24937940/129482846-e8b5ac9b-bb4c-4226-8c38-e82e3c66e33d.png)
+
+4. To prevent duplicates overwriting when trying to read same cell from different skywater130 say skywater130(vendor), run, gds noduplicates true
+
+### Understanding Ports
+
+1. Select any port and run, port index
+
+![image](https://user-images.githubusercontent.com/24937940/129482997-4307e5cf-bd4c-4da9-a094-a8e964ce5ff8.png)
+
+2. To know about name, class etc. of ports
+
+![image](https://user-images.githubusercontent.com/24937940/129483070-8c19c51c-e4b4-43fa-a57b-a0cf0e0103df.png)
+
+### Abstract Views
+
+Abstract views are in form of LEF/DEF where layer information is present
+1. For reading lef, lef read "name of lef file"
+
+![image](https://user-images.githubusercontent.com/24937940/129483647-33b0a035-9b98-488a-b3fa-bea08991b79e.png)
+
+2. Load cell,
+
+![image](https://user-images.githubusercontent.com/24937940/129483698-7f1fabc7-563a-4a49-88c4-aef5e9e68ed5.png)
+
+3. Viewing abstract View of cell by loading the cell by getcell
+
+![image](https://user-images.githubusercontent.com/24937940/129484089-6d5c41ab-794e-49bb-becd-cf776f4e6849.png)
+
+4.Read abstract view in gds format, not all layers are present
+
+![image](https://user-images.githubusercontent.com/24937940/129484209-1b81a7f6-eb55-469b-a514-a630b8ea0017.png)
+
+### Basic Extraction
+
+1. Load cell
+
+![image](https://user-images.githubusercontent.com/24937940/129485489-bf72c384-2f69-4270-bbd7-ad90459dccc4.png)
+
+2. Run on terminal, extract all, ext2spice lvs, ext2spice
+3. Now lets continue with capacitance extraction
+
+![image](https://user-images.githubusercontent.com/24937940/129485698-94d31597-1319-40f7-9fad-a476232daabf.png)
+
+4. For extracting resistance, follow commands, it will create .sim and .nodes files in terminal
+
+![image](https://user-images.githubusercontent.com/24937940/129485842-ee0995f3-e22e-48fa-ab00-0d15767fb8b3.png)
+
+5. For having one single netlist, follow following steps,
+
+![image](https://user-images.githubusercontent.com/24937940/129485975-63e52715-f1a0-4cec-85e4-39997833eb9e.png)
+
+### DRC Setup
+
+Follow below steps to run DRC check,
+1. 
+
+### LVS setup
+
+For LVS run simple steps are required, netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
+
+### XOR Setup
+
+
+## DAY 3 - Front-End and back-End DRC
+
+
+
+
+
 
 
  
