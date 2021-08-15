@@ -248,21 +248,75 @@ Abstract views are in form of LEF/DEF where layer information is present
 ### DRC Setup
 
 Follow below steps to run DRC check,
-1. 
+1. Run following steps to have batch mode drc run
+
+![image](https://user-images.githubusercontent.com/24937940/129486538-36892d0b-5560-4975-b6e4-753f3eb553c2.png)
+
+2. Check error in below file
+
+![image](https://user-images.githubusercontent.com/24937940/129486566-f1c26aaf-bdcb-4cc0-8328-43fb31802a6e.png)
+
+3. Steps for checking drc errors from magic for this standard cell,
+
+![image](https://user-images.githubusercontent.com/24937940/129486676-1d203ed1-a583-423d-a6b2-98d248f8cc3e.png)
+
+4. DRC errors are around 7.
+
+![image](https://user-images.githubusercontent.com/24937940/129486704-9ec6a388-fd3e-4e06-b38c-55c68a48cf4d.png)
+
+5. During digital syntesis, these drc errors will be handled by aligning with tap cell, Aligning standard cell and tap cell, 
+
+![image](https://user-images.githubusercontent.com/24937940/129486814-a3de505b-ff1c-40df-a85e-ce46a5838f10.png)
+
+6. DRC errors are now 0.
+
+![image](https://user-images.githubusercontent.com/24937940/129487006-36b7d077-2438-43f8-ae07-d1f350625312.png)
 
 ### LVS setup
 
 For LVS run simple steps are required, netgen -batch lvs "../mag/inverter.spice inverter" "../xschem/inverter.spice inverter"
 
-### XOR Setup
-
 
 ## DAY 3 - Front-End and back-End DRC
 
+DRC stands for Design Rule Checking
+Through DRC checks we can verify if the layout masks created will meet foundary specifid rules.
+
+During fabrication,
+
+![image](https://user-images.githubusercontent.com/24937940/129487199-c2c349a5-e8ae-43f7-a4a6-e5d5fe8c4d56.png)
+
+Open and shorts caused due to spot defects ends up in a dead chip and can affect process yield.
+
+### Back-End Metal Rules like,
+ 1. Width Rule
+ 2. Spacing Rule
+ 3. The Wide-spacing rule
+ 4. Notch Rule
+ 5. Minimum and maximum Area Rules
+ 6. Minimum Hole Area Rules
+ 7. Contact Cut (Via) Rules
+
+### Local Interconnect Rule
+
+### Front End Rules
+
+### Wells and Taps
+### Same Net Spacing
+
+### Device Rules
+ 1. Rules for resistor devices
+ 2. Rules for capacitor devices
+ 3. Rules for Diodes
+ 4. Rules for fixed layout devices
+
+### Off-Grid Rules
+### Angle-limitations
+### Seal Ring rules
+### Latchup rules
+### Antenna rules
+### Stress rules
+### Slotting rules
+### Density rules
 
 
-
-
-
-
- 
